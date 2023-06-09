@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Configuration.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class SoftAssertions {
+public class SoftAssertionsTest {
 
     @BeforeAll
     static void init() {
@@ -25,6 +25,7 @@ public class SoftAssertions {
         
       
         $("ul.UnderlineNav-body").$("#wiki-tab").click();
+
        
         SelenideElement rightBar = $(".wiki-rightbar");
         rightBar.$(byText("Show 2 more pages…")).click();
